@@ -1,10 +1,13 @@
-
+var Game = require('./../js/game.js').gameModule;
 
 $(document).ready(function() {
-  $("button").submit(function(event) {
+  $("button").click(function(event) {
     event.preventDefault();
-    var cardPosition = $(this).val();
-    $(".out").text("<p>" + cardPosition + "</p>");
-    console.log(cardPosition);
-  })
+    console.log("$(button#2): " + $('input#2i').val());
+    console.log("$(button#): " + $('input#1i').val());
+    // var cardPosition = $(this).val();
+    // $("ul").append("<li>" + cardPosition + "</li>");
+    // $('#solution').append("<li>" + element + "</li>");
+    // console.log(cardPosition);
+  });
 });

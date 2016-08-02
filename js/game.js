@@ -4,7 +4,7 @@ function Game() {
   this.turns = [];
   this.clicks = 0;
   this.cards = [ 1, 2, 3, 4, 5, 1, 2, 3, 4, 5];
-};
+}
 
 Game.prototype.shuffle = function () {
   for (var i = cards.length - 1; i>= 0; i--) {
@@ -26,8 +26,7 @@ Game.prototype.getTurn = function() {
   clicks=0;
   allTurns += 1;
 
-  if(turns[0]==turns[1])
-    {
+  if(turns[0]==turns[1]) {
       wonTurns +=1;
       turns = [];
       return true;
@@ -38,7 +37,7 @@ Game.prototype.getTurn = function() {
     }
   };
 
-  Game.prototype.gameWon() = function() {
+  Game.prototype.gameWon = function() {
     if(wonTurns == 5){
       return true;
     } else {
